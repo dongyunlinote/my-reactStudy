@@ -1,1 +1,2 @@
 学习react 基础知识
+react基础知识引用js文件，没有配置react开发环境
