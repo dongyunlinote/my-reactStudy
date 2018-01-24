@@ -1,3 +1,2 @@
-this code is my study react step
-
-这个学习步骤 是引用js 
+学习react 基础知识
+react基础知识引用js文件，没有配置react开发环境
