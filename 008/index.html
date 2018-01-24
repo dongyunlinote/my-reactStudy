@@ -7,34 +7,30 @@
   <script src="../build/browser.min.js"></script>
 </head>
 <body>
-<div id="example"></div>
-<script type="text/babel">
-var LinkButton = React.createClass({
-    getInitialState: function() {
-        return {liked: false};
-    },
-    handleClick: function() {
-        this.setState({ liked: !this.state.liked});
-    },
-    render: function() {
-        var text = this.state.liked ? 'like':'haven\'t liked';
-        return(
-            <p onClick={this.handleClick}>
-                you {text} this . Click to toggle
-            </p>
-        );
-    }
-});
+  <div id="example"></div>
+  <script type="text/babel">
+  var LinkButton = React.createClass({
+      getInitialState: function() {
+          return {liked: false};
+      },
+      handleClick: function() {
+          this.setState({ liked: !this.state.liked});
+      },
+      render: function() {
+          var text = this.state.liked ? 'like':'haven\'t liked';
+          return(
+              <p onClick={this.handleClick}>
+                  you {text} this . Click to toggle
+              </p>
+          );
+      }
+  });
 
-
-ReactDOM.render(
-    <LinkButton/>,
-    document.getElementById('example')
-);
-
-    
-
-</script>
+  ReactDOM.render(
+      <LinkButton/>,
+      document.getElementById('example')
+  );
+  </script>
 
 </body>
 </html>
